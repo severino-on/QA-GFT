@@ -18,7 +18,7 @@ public class QaApplication {
 		WebTarget target = client.target("http://www.mocky.io"); //Localiza nome GFT no texto
 		String conteudo	= target.path("/v2/5bda436c2f0000823706d445").request().get(String.class);		
 		System.out.println(conteudo);
-		Assert.assertTrue(conteudo.contains("GFT"));
+		Assert.assertTrue(conteudo.contains("GFT "));
 		
 		
 	}
